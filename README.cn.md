@@ -4,13 +4,25 @@
 
 unar mirror for maintenance to build on some distros
 
-![unar](https://repo.x-cmd.io/unar.svg)
+![unar](https://repo.x-cmd.io/unar.svg?lang=zh)
 
 ## 安装
 
 ```sh
 x install unar
 ```
+
+## 代码规模
+
+合计: **116,173** 行代码（覆盖前 5 种语言、共 **579** 个文件）。
+
+| 语言 | 代码 | 注释 | 空行 | 文件数 |
+|------|-----:|-----:|-----:|------:|
+| C | 59,816 | 4,798 | 6,467 | 94 |
+| ObjectiveC | 41,338 | 2,372 | 10,403 | 198 |
+| CHeader | 11,541 | 4,486 | 3,682 | 259 |
+| Cpp | 3,384 | 1,213 | 402 | 26 |
+| Makefile | 65 | 0 | 26 | 2 |
 
 ## 源代码
 
@@ -31,20 +43,29 @@ x install unar
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
 | 30d | 2026-08-11 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last60d | 2026-07-12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 90d | 2026-06-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last180d | 2026-03-14 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 360d | 2025-09-15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last720d | 2024-09-20 | 0 | 0 | 0 | 0 | 1 | 0 |
 
-## 代码规模
+## 发行版状态
 
-合计: **116,173** 行代码（覆盖前 5 种语言、共 **579** 个文件）。
+在 [repology.org](https://repology.org/project/unar) 上共有 **87** 个发行版报告此项目。**50** 个 ✅ 已是最新上游版本，**35** 个 ⚠️ 使用旧版本。
 
-| 语言 | 代码 | 注释 | 空行 | 文件数 |
-|------|-----:|-----:|-----:|------:|
-| C | 59,816 | 4,798 | 6,467 | 94 |
-| ObjectiveC | 41,338 | 2,372 | 10,403 | 198 |
-| CHeader | 11,541 | 4,486 | 3,682 | 259 |
-| Cpp | 3,384 | 1,213 | 402 | 26 |
-| Makefile | 65 | 0 | 26 | 2 |
+| 发行版 | 版本 | 状态 |
+|--------|------|------|
+| Debian unstable | `1.10.8` | ✅ latest |
+| Debian 14 | `1.10.8` | ✅ latest |
+| Debian 13 | `1.10.8` | ✅ latest |
+| Ubuntu 26.04 LTS | `1.10.8` | ✅ latest |
+| Ubuntu 24.04 LTS | `1.10.7+really1.10.1` | ⚠️ outdated |
+| Arch | `1.10.8` | ✅ latest |
+| Homebrew | `1.10.8` | ✅ latest |
+| Fedora rawhide | `1.10.8` | ✅ latest |
+| Nix unstable | `1.10.8` | ✅ latest |
+| Void | `1.10.8` | ✅ latest |
+| openSUSE Tumbleweed | `1.10.8` | ✅ latest |
 
 ## 改进这些数据
 
@@ -55,4 +76,4 @@ unar 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T06:18:15Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T21:27:37Z._
