@@ -1,3 +1,85 @@
+- repo: raspbian_stable
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: unarchiver
+  binname: unarchiver
+  visiblename: unarchiver
+  version: 1.10.8
+  origversion: 1.10.8-6
+  status: newest
+  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
+  licenses:
+    - LGPL-2.1-only
+- repo: raspbian_testing
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: nix_stable_24_05
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: null
+  status: outdated
+  summary: An archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: pardus_21
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-2
+  status: outdated
+  maintainers:
+    - kraai@debian.org
+    - asias.hejun@gmail.com
+    - julian@debian.org
+  categories:
+    - utils
 - repo: nix_stable_24_11
   srcname: unar
   visiblename: unar
@@ -31,25 +113,35 @@
     - peter@hoeg.com
   licenses:
     - LGPL-2.1-or-later
-- repo: scoop
-  subrepo: main
-  binname: unar
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: unar
+  binnames:
+    - unar
   visiblename: unar
-  version: 1.8.1
-  origversion: null
-  status: outdated
-  licenses:
-    - LGPL-2.1-or-later
-- repo: slackbuilds
-  srcname: system/unar
-  visiblename: system/unar
   version: 1.10.8
-  origversion: null
+  origversion: 1.10.8+ds1-9
   status: newest
   maintainers:
-    - urchlay@slackware.uk
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
   categories:
-    - system
+    - utils
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.7+really1.10.1
+  origversion: 1.10.7+ds1+really1.10.1-2
+  status: outdated
+  maintainers:
+    - pkg-a11y-devel@alioth-lists.debian.net
+    - byang@debian.org
+  categories:
+    - utils
 - repo: alt_p11
   srcname: unar
   binnames:
@@ -255,21 +347,6 @@
     - julian@debian.org
   categories:
     - utils
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
 - repo: epel_7
   srcname: unar
   visiblename: unar
@@ -437,6 +514,32 @@
     - danfe@freebsd.org
   categories:
     - archivers
+- repo: nix_stable_26_05
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: parrot
+  subrepo: parrot/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
 - repo: gentoo
   srcname: app-arch/unar
   visiblename: app-arch/unar
@@ -602,39 +705,6 @@
   summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
     - LGPL2.1
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: unarchiver
-  binname: unarchiver
-  visiblename: unarchiver
-  version: 1.10.8
-  origversion: 1.10.8-6
-  status: newest
-  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
-  licenses:
-    - LGPL-2.1-only
-- repo: nix_stable_24_05
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: null
-  status: outdated
-  summary: An archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
-- repo: nix_stable_26_05
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: null
-  status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
 - repo: nix_unstable
   srcname: unar
   visiblename: unar
@@ -653,11 +723,11 @@
     - unar
   visiblename: unar
   version: 1.10.8
-  origversion: 1.10.8-3mamba
+  origversion: 1.10.8-4mamba
   status: newest
   summary: Multi-format extractor
   maintainers:
-    - silvan.calarco@mambasoft.it
+    - silvan@openmamba.org
   licenses:
     - LGPL
   categories:
@@ -785,38 +855,8 @@
   summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
     - LGPL-2.1-only
-- repo: pardus_21
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-2
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
 - repo: parrot
   subrepo: parrot-updates/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: parrot
-  subrepo: parrot/main
   srcname: unar
   binnames:
     - unar
@@ -869,65 +909,6 @@
     - julian@debian.org
   categories:
     - utils
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.7+really1.10.1
-  origversion: 1.10.7+ds1+really1.10.1-2
-  status: outdated
-  maintainers:
-    - pkg-a11y-devel@alioth-lists.debian.net
-    - byang@debian.org
-  categories:
-    - utils
-- repo: raspbian_stable
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: raspbian_testing
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
 - repo: rosa_2019_1
   subrepo: main/release
   srcname: unar
@@ -971,6 +952,25 @@
   origversion: null
   status: outdated
   summary: unar (application for uncompressing archive files)
+- repo: scoop
+  subrepo: main
+  binname: unar
+  visiblename: unar
+  version: 1.8.1
+  origversion: null
+  status: outdated
+  licenses:
+    - LGPL-2.1-or-later
+- repo: slackbuilds
+  srcname: system/unar
+  visiblename: system/unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  maintainers:
+    - urchlay@slackware.uk
+  categories:
+    - system
 - repo: termux
   srcname: unar
   binname: unar
