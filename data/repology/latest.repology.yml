@@ -1,34 +1,169 @@
-- repo: raspbian_stable
-  subrepo: main
+- repo: pureos_byzantium
+  subrepo: byzantium/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-2
+  status: outdated
+  maintainers:
+    - kraai@debian.org
+    - asias.hejun@gmail.com
+    - julian@debian.org
+  categories:
+    - utils
+- repo: nix_stable_26_05
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: nix_unstable
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: openmamba
+  subrepo: base
   srcname: unar
   binnames:
     - unar
   visiblename: unar
   version: 1.10.8
-  origversion: 1.10.8+ds1-9
+  origversion: 1.10.8-4mamba
   status: newest
+  summary: Multi-format extractor
   maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
+    - silvan@openmamba.org
+  licenses:
+    - LGPL
   categories:
-    - utils
-- repo: devuan_unstable
-  subrepo: unstable/main
+    - Applications/Archiving
+- repo: openmandriva_6_0
+  subrepo: main/release
   srcname: unar
   binnames:
     - unar
   visiblename: unar
   version: 1.10.8
-  origversion: 1.10.8+ds1-10
+  origversion: 1.10.8-6
   status: newest
+  summary: Multi format application for uncompressing archive files
   maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
+    - bero@lindev.ch
+  licenses:
+    - LGPLv2+
   categories:
-    - utils
-- repo: manjaro_unstable
+    - Archiving/Compression
+- repo: openmandriva_rolling
+  subrepo: main/release
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8-7
+  status: newest
+  summary: Multi format application for uncompressing archive files
+  maintainers:
+    - bero@lindev.ch
+  licenses:
+    - LGPLv2+
+  categories:
+    - Archiving/Compression
+- repo: openmandriva_cooker
+  subrepo: main/release
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8-8
+  status: newest
+  summary: Multi format application for uncompressing archive files
+  maintainers:
+    - bero@lindev.ch
+  licenses:
+    - LGPLv2+
+  categories:
+    - Archiving/Compression
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: 1.10.7-1.13
+  status: outdated
+  summary: Multi-format unarchiver
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: 1.10.7-150200.3.3.2
+  status: outdated
+  summary: Multi-format unarchiver
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: 1.10.7-150200.3.3.2
+  status: outdated
+  summary: Multi-format unarchiver
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+- repo: opensuse_leap_15_6
+  subrepo: updates/sle
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: 1.10.7-150200.3.6.1
+  status: outdated
+  summary: Multi-format unarchiver
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+- repo: opensuse_tumbleweed
+  subrepo: src-oss
+  srcname: unar
+  binnames:
+    - unar
+    - unar-debuginfo
+    - unar-debugsource
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8-3.8
+  status: newest
+  summary: Multi-format unarchiver
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+- repo: parabola
   subrepo: extra
   srcname: unarchiver
   binname: unarchiver
@@ -39,32 +174,6 @@
   summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
     - LGPL-2.1-only
-- repo: raspbian_testing
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: nix_stable_24_05
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: null
-  status: outdated
-  summary: An archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
 - repo: pardus_21
   subrepo: main
   srcname: unar
@@ -80,39 +189,45 @@
     - julian@debian.org
   categories:
     - utils
-- repo: nix_stable_24_11
+- repo: parrot
+  subrepo: parrot/main
   srcname: unar
+  binnames:
+    - unar
   visiblename: unar
-  version: 1.10.7
-  origversion: null
-  status: outdated
-  summary: Archive unpacker program
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
   maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
-- repo: nix_stable_25_05
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: parrot
+  subrepo: parrot-updates/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: pclinuxos
   srcname: unar
   visiblename: unar
   version: 1.10.8
-  origversion: null
+  origversion: 1.10.8-1pclos2024
   status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
-- repo: nix_stable_25_11
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: null
-  status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
+  summary: Multi format application for uncompressing archive files
+  categories:
+    - Archiving/Compression
 - repo: pureos_landing
   subrepo: landing/main
   srcname: unar
@@ -142,6 +257,76 @@
     - byang@debian.org
   categories:
     - utils
+- repo: raspbian_stable
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: raspbian_testing
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: rosa_2019_1
+  subrepo: main/release
+  srcname: unar
+  binnames:
+    - unar
+    - unar-debuginfo
+    - unar-debugsource
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-5
+  status: outdated
+  summary: Multi-format extractor
+  maintainers:
+    - m.novosyolov@rosalinux.ru
+  licenses:
+    - LGPLv2+
+  categories:
+    - Archiving/Compression
+- repo: nix_stable_25_05
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: nix_stable_25_11
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
 - repo: alt_p11
   srcname: unar
   binnames:
@@ -184,6 +369,21 @@
   summary: General unarchiver for a variety of file formats, including FOSS decompress code for RAR
   maintainers:
     - fallback-mnt-aosc@repology
+  categories:
+    - utils
+- repo: kali_rolling
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
   categories:
     - utils
 - repo: arch
@@ -347,6 +547,21 @@
     - julian@debian.org
   categories:
     - utils
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
 - repo: epel_7
   srcname: unar
   visiblename: unar
@@ -369,6 +584,21 @@
     - LGPLv2+
   categories:
     - Unspecified
+- repo: pureos_amber
+  subrepo: amber/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-2
+  status: outdated
+  maintainers:
+    - kraai@debian.org
+    - asias.hejun@gmail.com
+    - julian@debian.org
+  categories:
+    - utils
 - repo: epel_9
   srcname: unar
   binnames:
@@ -514,32 +744,6 @@
     - danfe@freebsd.org
   categories:
     - archivers
-- repo: nix_stable_26_05
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: null
-  status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
-- repo: parrot
-  subrepo: parrot/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
 - repo: gentoo
   srcname: app-arch/unar
   visiblename: app-arch/unar
@@ -567,21 +771,6 @@
   origversion: null
   status: rolling
   summary: Command-line unarchiving tools supporting multiple formats
-- repo: kali_rolling
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
 - repo: liguros_stable
   srcname: app-arch/unar
   visiblename: app-arch/unar
@@ -688,163 +877,13 @@
   srcname: unarchiver
   binname: unarchiver
   visiblename: unarchiver
-  version: 1.10.7
-  origversion: 1.10.7-9
-  status: outdated
-  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
-  licenses:
-    - LGPL2.1
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: unarchiver
-  binname: unarchiver
-  visiblename: unarchiver
-  version: 1.10.7
-  origversion: 1.10.7-9
-  status: outdated
-  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
-  licenses:
-    - LGPL2.1
-- repo: nix_unstable
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: null
-  status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
-  licenses:
-    - LGPL-2.1-or-later
-- repo: openmamba
-  subrepo: base
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8-4mamba
-  status: newest
-  summary: Multi-format extractor
-  maintainers:
-    - silvan@openmamba.org
-  licenses:
-    - LGPL
-  categories:
-    - Applications/Archiving
-- repo: openmandriva_6_0
-  subrepo: main/release
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
   version: 1.10.8
   origversion: 1.10.8-6
   status: newest
-  summary: Multi format application for uncompressing archive files
-  maintainers:
-    - bero@lindev.ch
+  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
-    - LGPLv2+
-  categories:
-    - Archiving/Compression
-- repo: openmandriva_rolling
-  subrepo: main/release
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8-7
-  status: newest
-  summary: Multi format application for uncompressing archive files
-  maintainers:
-    - bero@lindev.ch
-  licenses:
-    - LGPLv2+
-  categories:
-    - Archiving/Compression
-- repo: openmandriva_cooker
-  subrepo: main/release
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8-8
-  status: newest
-  summary: Multi format application for uncompressing archive files
-  maintainers:
-    - bero@lindev.ch
-  licenses:
-    - LGPLv2+
-  categories:
-    - Archiving/Compression
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: 1.10.7-1.13
-  status: outdated
-  summary: Multi-format unarchiver
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: 1.10.7-150200.3.3.2
-  status: outdated
-  summary: Multi-format unarchiver
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: 1.10.7-150200.3.3.2
-  status: outdated
-  summary: Multi-format unarchiver
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-- repo: opensuse_leap_15_6
-  subrepo: updates/sle
-  srcname: unar
-  visiblename: unar
-  version: 1.10.7
-  origversion: 1.10.7-150200.3.6.1
-  status: outdated
-  summary: Multi-format unarchiver
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-- repo: opensuse_tumbleweed
-  subrepo: src-oss
-  srcname: unar
-  binnames:
-    - unar
-    - unar-debuginfo
-    - unar-debugsource
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8-3.8
-  status: newest
-  summary: Multi-format unarchiver
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-- repo: parabola
+    - LGPL-2.1-only
+- repo: manjaro_testing
   subrepo: extra
   srcname: unarchiver
   binname: unarchiver
@@ -855,78 +894,39 @@
   summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
     - LGPL-2.1-only
-- repo: parrot
-  subrepo: parrot-updates/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: unarchiver
+  binname: unarchiver
+  visiblename: unarchiver
   version: 1.10.8
-  origversion: 1.10.8+ds1-9
+  origversion: 1.10.8-6
   status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: pclinuxos
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8-1pclos2024
-  status: newest
-  summary: Multi format application for uncompressing archive files
-  categories:
-    - Archiving/Compression
-- repo: pureos_amber
-  subrepo: amber/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-2
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-2
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
-- repo: rosa_2019_1
-  subrepo: main/release
-  srcname: unar
-  binnames:
-    - unar
-    - unar-debuginfo
-    - unar-debugsource
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-5
-  status: outdated
-  summary: Multi-format extractor
-  maintainers:
-    - m.novosyolov@rosalinux.ru
+  summary: 'unar and lsar: Objective-C tools for uncompressing archive files'
   licenses:
-    - LGPLv2+
-  categories:
-    - Archiving/Compression
+    - LGPL-2.1-only
+- repo: nix_stable_24_05
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: null
+  status: outdated
+  summary: An archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
+- repo: nix_stable_24_11
+  srcname: unar
+  visiblename: unar
+  version: 1.10.7
+  origversion: null
+  status: outdated
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
 - repo: rosa_13
   subrepo: contrib/release
   srcname: unar
@@ -1116,6 +1116,21 @@
     - universe/utils
 - repo: ubuntu_26_10
   subrepo: stonking/universe
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - universe/utils
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
   srcname: unar
   binnames:
     - unar
