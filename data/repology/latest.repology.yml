@@ -1,88 +1,12 @@
-- repo: raspbian_oldstable
+- repo: scoop
   subrepo: main
-  srcname: unar
-  binnames:
-    - unar
+  binname: unar
   visiblename: unar
-  version: 1.10.7+really1.10.1
-  origversion: 1.10.7+ds1+really1.10.1-2
-  status: outdated
-  maintainers:
-    - pkg-a11y-devel@alioth-lists.debian.net
-    - byang@debian.org
-  categories:
-    - utils
-- repo: nix_stable_25_11
-  srcname: unar
-  visiblename: unar
-  version: 1.10.8
+  version: 1.8.1
   origversion: null
-  status: newest
-  summary: Archive unpacker program
-  maintainers:
-    - peter@hoeg.com
+  status: outdated
   licenses:
     - LGPL-2.1-or-later
-- repo: pureos_amber
-  subrepo: amber/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-2
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
-- repo: raspbian_stable
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: raspbian_testing
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1
-  origversion: 1.10.1-2
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
 - repo: alt_p11
   srcname: unar
   binnames:
@@ -230,21 +154,6 @@
     - yavor@gnu.org
   categories:
     - utils
-- repo: deepin_unstable
-  subrepo: main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.1.1
-  origversion: 1.10.1.1-1+rebuild
-  status: outdated
-  maintainers:
-    - kraai@debian.org
-    - asias.hejun@gmail.com
-    - julian@debian.org
-  categories:
-    - utils
 - repo: deepin_23
   subrepo: main
   srcname: unar
@@ -296,21 +205,6 @@
   visiblename: unar
   version: 1.10.8
   origversion: 1.10.8+ds1-10
-  status: newest
-  maintainers:
-    - pkg-gnustep-maintainers@lists.alioth.debian.org
-    - tar@debian.org
-    - yavor@gnu.org
-  categories:
-    - utils
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: unar
-  binnames:
-    - unar
-  visiblename: unar
-  version: 1.10.8
-  origversion: 1.10.8+ds1-9
   status: newest
   maintainers:
     - pkg-gnustep-maintainers@lists.alioth.debian.org
@@ -676,6 +570,17 @@
     - peter@hoeg.com
   licenses:
     - LGPL-2.1-or-later
+- repo: nix_stable_25_11
+  srcname: unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: null
+  status: newest
+  summary: Archive unpacker program
+  maintainers:
+    - peter@hoeg.com
+  licenses:
+    - LGPL-2.1-or-later
 - repo: nix_stable_26_05
   srcname: unar
   visiblename: unar
@@ -787,11 +692,11 @@
   categories:
     - Unspecified
 - repo: opensuse_leap_15_6
-  subrepo: updates/sle
+  subrepo: main/oss
   srcname: unar
   visiblename: unar
   version: 1.10.7
-  origversion: 1.10.7-150200.3.6.1
+  origversion: 1.10.7-150200.3.3.2
   status: outdated
   summary: Multi-format unarchiver
   licenses:
@@ -799,11 +704,11 @@
   categories:
     - Unspecified
 - repo: opensuse_leap_15_6
-  subrepo: main/oss
+  subrepo: updates/sle
   srcname: unar
   visiblename: unar
   version: 1.10.7
-  origversion: 1.10.7-150200.3.3.2
+  origversion: 1.10.7-150200.3.6.1
   status: outdated
   summary: Multi-format unarchiver
   licenses:
@@ -891,6 +796,95 @@
   summary: Multi format application for uncompressing archive files
   categories:
     - Archiving/Compression
+- repo: pureos_amber
+  subrepo: amber/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-2
+  status: outdated
+  maintainers:
+    - kraai@debian.org
+    - asias.hejun@gmail.com
+    - julian@debian.org
+  categories:
+    - utils
+- repo: pureos_byzantium
+  subrepo: byzantium/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.1
+  origversion: 1.10.1-2
+  status: outdated
+  maintainers:
+    - kraai@debian.org
+    - asias.hejun@gmail.com
+    - julian@debian.org
+  categories:
+    - utils
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.7+really1.10.1
+  origversion: 1.10.7+ds1+really1.10.1-2
+  status: outdated
+  maintainers:
+    - pkg-a11y-devel@alioth-lists.debian.net
+    - byang@debian.org
+  categories:
+    - utils
+- repo: raspbian_stable
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-9
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
+- repo: raspbian_testing
+  subrepo: main
+  srcname: unar
+  binnames:
+    - unar
+  visiblename: unar
+  version: 1.10.8
+  origversion: 1.10.8+ds1-10
+  status: newest
+  maintainers:
+    - pkg-gnustep-maintainers@lists.alioth.debian.org
+    - tar@debian.org
+    - yavor@gnu.org
+  categories:
+    - utils
 - repo: rosa_2019_1
   subrepo: main/release
   srcname: unar
@@ -934,15 +928,6 @@
   origversion: null
   status: outdated
   summary: unar (application for uncompressing archive files)
-- repo: scoop
-  subrepo: main
-  binname: unar
-  visiblename: unar
-  version: 1.8.1
-  origversion: null
-  status: outdated
-  licenses:
-    - LGPL-2.1-or-later
 - repo: slackbuilds
   srcname: system/unar
   visiblename: system/unar
